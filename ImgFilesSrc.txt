@@ -1,0 +1,17 @@
+data/test_data/melanoma/ISIC_0000002.jpg
+data/test_data/melanoma/ISIC_0000004.jpg
+data/test_data/melanoma/ISIC_0000013.jpg
+data/test_data/melanoma/ISIC_0000022.jpg
+data/test_data/melanoma/ISIC_0000026.jpg
+data/test_data/melanoma/ISIC_0000029.jpg
+data/test_data/melanoma/ISIC_0000030.jpg
+data/test_data/melanoma/ISIC_0000031.jpg
+data/test_data/melanoma/ISIC_0000035.jpg
+data/test_data/melanoma/ISIC_0000036.jpg
+data/test_data/melanoma/ISIC_0000040.jpg
+data/test_data/melanoma/ISIC_0000043.jpg
+data/test_data/melanoma/ISIC_0000046.jpg
+data/test_data/melanoma/ISIC_0000049.jpg
+data/test_data/melanoma/ISIC_0000054.jpg
+data/test_data/melanoma/ISIC_0000056.jpg
+
