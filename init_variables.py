@@ -42,6 +42,9 @@ Final_DL_rate = 0.0001
 
 #########################################################################
 #################### Training details  ##################################
+img_size  = 224
+batch_size = 4
+
 
 image_type = 'L'  # RGB    or   L
 black_and_white = False
