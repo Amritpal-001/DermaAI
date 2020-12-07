@@ -77,9 +77,11 @@ def train_test_model(model, data_directory, epoch, img_size, batch_size, learnin
 ### https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator#flow_from_dataframe
 def generate_dataset_from_dataframe( ):
 
-    directory   = '/home/amritpal/PycharmProjects/100-days-of-code/100_days_of_code/Skin_lesions_Classification-master/isic_2020/train/'
+    #directory   = '/home/amritpal/PycharmProjects/100-days-of-code/100_days_of_code/Skin_lesions_Classification-master/isic_2020/train/'
+    directory   = '/content/Skin_lesions_Classification/data/train/'
 
-    df = pd.read_csv(directory + 'train.csv')
+
+    df = pd.read_csv(directory + 'train_train.csv')
 
     # Reading files from path in data frame
     datagen = ImageDataGenerator(rescale=1.0/255.0, rotation_range=10, width_shift_range=0.1, zoom_range=0.1,
