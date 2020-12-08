@@ -288,20 +288,20 @@ def custom_InceptionV3_base(num_classes, input_shape=(299, 299, 3)):
 
 #model = InceptionV3(input_shape=(299, 299, 3))
 def custom_original_ResNet50_base(num_classes , input_shape= None):
-  InceptionV3_base = tf.keras.applications.ResNet50(include_top=False, weights='imagenet', input_shape=input_shape,
+  resnet_base = tf.keras.applications.ResNet50(include_top=False, weights='imagenet', input_shape=input_shape,
                                                        pooling='avg')
-  x = InceptionV3_base.layers[-1].output
+  x = resnet_base.layers[-1].output
   predictions = Dense(1, activation = "sigmoid")(x)
-  model = Model(inputs = InceptionV3_base.input,  outputs = predictions)
+  model = Model(inputs = resnet_base.input,  outputs = predictions)
   model.summary()
   return(model)
 
 def custom_original_Xception_base(num_classes , input_shape= None):
-  InceptionV3_base = tf.keras.applications.Xception(include_top=False, weights='imagenet', input_shape=input_shape,
+  xception_base = tf.keras.applications.Xception(include_top=False, weights='imagenet', input_shape=input_shape,
                                                        pooling='avg')
-  x = InceptionV3_base.layers[-1].output
+  x = xception_base.layers[-1].output
   predictions = Dense(1, activation = "sigmoid")(x)
-  model = Model(inputs = InceptionV3_base.input,  outputs = predictions)
+  model = Model(inputs = xception_base.input,  outputs = predictions)
   model.summary()
   return(model)
 
@@ -328,9 +328,10 @@ def custom_original_InceptionV3_base(num_classes , input_shape= None):
   #model.summary()
   return(model)'''
 
-def Freeze_model(model, print = False):
-    for layer in model.layers[:-51]:
+def Freeze_model(model, freeze_till):
+    freeze_till = (-1*freeze_till)
+    for layer in model.layers[:freeze_till]:
         layer.trainable = False
-    if print == True:
-        for l in model.layers:
+    
+    for l in model.layers:
             print(l.name, l.trainable)
