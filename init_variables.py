@@ -26,11 +26,13 @@ tensorflow_seed_value = 2
 num_classes = 1
 optimizer = 'adam'
 metrics = ['accuracy', 'categorical_crossentropy']
-model_architecture_list = ['resnet', 'inception', 'vgg', 'cbr']
-model_architecture = model_architecture_list[1]
+model_architecture_list = ['xception' , 'resnet', 'inception', 'vgg', 'cbr']
+model_architecture = model_architecture_list[0]
 pretrained = True
 
-freeze_till_layer = -94
+if model_architecture = 'xception'
+    freeze_till = 48   #XceptionNet
+               # 94   #INceptionV3
 
 #########################################################################
 #################### Learning rate  #####################################
@@ -43,13 +45,19 @@ Final_DL_rate = 0.0001
 #########################################################################
 #################### Training details  ##################################
 img_size  = 224
-batch_size = 4
 
+
+if colab == True:
+    batch_size = 32
+else:
+    batch_size = 4
+    
+    
 
 image_type = 'L'  # RGB    or   L
 black_and_white = False
-img_size = 299
-batch_size = 16
+
+
 # data_directory = ROOT_DIR + '/data/Test'
 data_directory = ROOT_DIR + '/data/Test'
 epoch = 2
