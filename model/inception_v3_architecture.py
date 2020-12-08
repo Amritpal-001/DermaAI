@@ -353,4 +353,4 @@ def find_freeze_layer_num(model):
     a = len(model.layers) - 1
     for layer in model.layers:
         print(layer.name , '       ',  a)
-           a -= 1
+        a -= 1
