@@ -338,10 +338,10 @@ def Freeze_model(model, freeze_till):
 
 
 def generate_defined_model(model_architecture , num_classes , input_shape= None , freeze_till = freeze_till  , draw_plot = True):
-    if architecture = 'xception':
-        model = custom_original_Xception_base(num_classes , input_shape= None)
+    if architecture == 'xception':
+        model == custom_original_Xception_base(num_classes , input_shape= None)
     if model_architecture = 'resnet':
-        model = custom_original_ResNet50_base(num_classes , input_shape= None)
+        model == custom_original_ResNet50_base(num_classes , input_shape= None)
         
     Freeze_model(model, freeze_till)
     
