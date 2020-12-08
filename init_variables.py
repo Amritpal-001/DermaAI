@@ -13,7 +13,7 @@ def set_random_seed(seed_value):
 import os
 
 ROOT_DIR = os.path.dirname(os.path.abspath("train_model.py"))
-print(ROOT_DIR)
+print('root directory is' , ROOT_DIR)
 
 ############################################################################
 ###################  Seed setting  ######################################
@@ -58,10 +58,16 @@ black_and_white = False
 
 
 # data_directory = ROOT_DIR + '/data/Test'
-data_directory = ROOT_DIR + '/data/Test'
+
+#  pC #directory   = '/home/amritpal/PycharmProjects/100-days-of-code/100_days_of_code/Skin_lesions_Classification-master/isic_2020/train/'
+# Google colab  #directory   = '/content/Skin_lesions_Classification/data/train/'
+data_directory = ROOT_DIR + '/data/train/'
 epoch = 2
 patience = 10
 
+
+train_csv_file_name = 'train_train_15000.csv'
+test_csv_file_name = 'train_test.csv'
 ########################################################################
 ###################Image Preprocessing##################################
 # APPLIES TO BOTH TRAIN AND VAL DATA(NOT IDEAL THING TO DO)
