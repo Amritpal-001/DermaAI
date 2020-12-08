@@ -30,7 +30,7 @@ model_architecture_list = ['xception' , 'resnet', 'inception', 'vgg', 'cbr']
 model_architecture = model_architecture_list[0]
 pretrained = True
 
-if model_architecture = 'xception'
+if model_architecture == 'xception'
     freeze_till = 48   #XceptionNet >>> 48 Total: 20,863,529   Before freeze   Trainable params: 20,809,001  Non-trainable params: 54,528 
                                                                 #After freeze   Trainable params: 11,632,361  Non-trainable params: 9,231,168
                # 94   #INceptionV3
