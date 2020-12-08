@@ -335,3 +335,22 @@ def Freeze_model(model, freeze_till):
     
     for l in model.layers:
             print(l.name, l.trainable)
+
+
+def generate_defined_model(model_architecture , num_classes , input_shape= None , freeze_till = freeze_till  , draw_plot = True):
+    if architecture = 'xception':
+        model = custom_original_Xception_base(num_classes , input_shape= None)
+    if model_architecture = 'resnet':
+        model = custom_original_ResNet50_base(num_classes , input_shape= None)
+        
+    Freeze_model(model, freeze_till)
+    
+    if draw_plot == True:
+        tf.keras.utils.plot_model( model, to_file= ('model' + model_architecture + '.png') , show_shapes=False, show_layer_names=True,)
+    
+        
+def find_freeze_layer_num(model):
+    a = len(model.layers) - 1
+    for layer in model.layers:
+        print(layer.name , '       ',  a)
+           a -= 1
