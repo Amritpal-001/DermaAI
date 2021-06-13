@@ -1,4 +1,4 @@
-# Skin_lesions_Classification
+# DermaAI - Skin lesions Classification
 Skin lesions classification - with user firendly interface to get test results
 
 AIM - Deploying deep learning models for opthalmology diagnosis
@@ -24,4 +24,4 @@ Frameworks used -
 
 
 Updates - 
-13 june 2021 - Github updated and cleaned. Next step is to add documentation to the previous code first.
+- 13 june 2021 - Github updated and cleaned. Next step is to add documentation to the previous code first.
