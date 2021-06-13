@@ -1,7 +1,7 @@
 # DermaAI - Skin lesions Classification
 Skin lesions classification - with user firendly interface to get test results
 
-AIM - Deploying deep learning models for opthalmology diagnosis
+Aim - deploying deep learning models for Derma diagnosis
 
 ## Goals - 
 - [x] Train models
